@@ -1087,9 +1087,9 @@ menu =
 `*${ucapanWaktu} @${senderr.split('@')[0]}*
 
 \`\`\`OPEN SEWABOT :\`\`\`
-➪ *1 Minggu :* _5.000_
-➪ *1 Bulan :* _10.000_
-➪ *Permanen :* _15.000_
+➪ *1 Minggu :* _7.000_
+➪ *1 Bulan :* _15.000_
+➪ *Permanen :* _30.000_
 
 ───────────────
 *_By 𝙆𝘼𝙕𝙐𝙆𝙄_* :
@@ -1112,7 +1112,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 gambar = fs.readFileSync('./media/sewa.jpg')
 menunya = `*「 PAYMENT 」*
 
-• Gopay : _Silakan scan qr di atas_
+• Gopay : _Gada_
 • Dana : _083113989278_
 • Ovo : _083113989278_
 • Pulsa : _Tidak tersedia_`
