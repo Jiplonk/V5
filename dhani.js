@@ -494,7 +494,7 @@ teks =
 `_Silakan Pilih Tombol Di Bawah_
 _Pilih Salah Satu Jika WhatsApp Gb_
 _Silakan Ketik ${prefix}command_`
-Dhani.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}command`, buttonText: { displayText: 'ᴄᴏᴍᴍᴀɴᴅ' }, type: 1 },{ buttonId: `${prefix}sewabot`, buttonText: { displayText: 'sᴇᴡᴀʙᴏᴛ' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [senderr,pemilik]}}}, 'buttonsMessage')
+Dhani.sendMessage(from, { contentText: `${menu}`, footerText: `${teks}`, buttons: [{ buttonId: `${prefix}command`, buttonText: { displayText: '.command' }, type: 1 },{ buttonId: `${prefix}sewabot`, buttonText: { displayText: '.sewaBot' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [senderr,pemilik]}}}, 'buttonsMessage')
 const sound = fs.readFileSync('./media/audio.mp3')
 Dhani.sendMessage(from, sound, audio, { mimetype: 'audio/mp4', ptt: true })
 break
@@ -1087,9 +1087,9 @@ menu =
 `*${ucapanWaktu} @${senderr.split('@')[0]}*
 
 \`\`\`OPEN SEWABOT :\`\`\`
-➪ *1 Minggu :* _7.000_
-➪ *1 Bulan :* _15.000_
-➪ *Permanen :* _30.000_
+➪ *1 Minggu :* _5.000_
+➪ *1 Bulan :* _10.000_
+➪ *Permanen :* _15.000_
 
 ───────────────
 *_By 𝙆𝘼𝙕𝙐𝙆𝙄_* :
@@ -1104,7 +1104,7 @@ menu =
 Untuk yang mau beli script / sc
 Bisa request jika minat silakan hubungi KazuKi
 Nomor : https://wa.me/6283113989278`
-Dhani.sendMessage(from, { contentText: `${menu}`, footerText: `*_${tanggal} - ${time} WIB_*`, buttons: [{ buttonId: `${prefix}payment`, buttonText: { displayText: 'ᴘᴀʏᴍᴇɴᴛ' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [senderr]}}}, 'buttonsMessage')
+Dhani.sendMessage(from, { contentText: `${menu}`, footerText: `*_${tanggal} - ${time} WIB_*`, buttons: [{ buttonId: `${prefix}payment`, buttonText: { displayText: '.payment' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: '.owner' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [senderr]}}}, 'buttonsMessage')
 break
 case 'bayar':
 case 'payment':
@@ -1112,12 +1112,12 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 gambar = fs.readFileSync('./media/sewa.jpg')
 menunya = `*「 PAYMENT 」*
 
-• Gopay : _Gada_
+• Gopay : _Silakan scan qr di atas_
 • Dana : _083113989278_
 • Ovo : _083113989278_
 • Pulsa : _Tidak tersedia_`
 but = [
-{ buttonId: `${prefix}menu`, buttonText: { displayText: 'ᴍᴇɴᴜ' }, type: 1 },
+{ buttonId: `${prefix}menu`, buttonText: { displayText: '.menu' }, type: 1 },
 { buttonId: `${prefix}owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 }
 ]
 sendButImage(from, menunya, `*_${tanggal} - ${time} WIB_*`, gambar, but)
@@ -1916,7 +1916,7 @@ case 'sc':
 case 'script':
 case 'sourcode':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fgi})
-fakeitem(`_Silakan mampir ke channel ini_\n_Karena disana ada script bot keren²_\n_Gak mampir sangat rugi besar_\n_https://youtube.com/channel/UCcnWMxH0nUbArCCkqubUeHA_`)
+fakeitem(`_Silakan Pm Owner_\n_Karena Owner Yang Ada Sc_\n_Sewa Murah Kok_\n_Wa.me/6283113989278_`)
 break
 case 'rules':
 case 's&k':
